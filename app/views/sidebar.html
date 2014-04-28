@@ -1,0 +1,7 @@
+<div ng-repeat="project in projects" class="link-container">
+    <a href="#" ng-click="$parent.selected = project" ng-class="{selected: selected === project}">
+        <h2 class="project-title">{{project}}</h2>
+        <div class="arrow-left"></div>
+    </a>
+</div>
+
