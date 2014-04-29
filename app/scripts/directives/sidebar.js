@@ -5,5 +5,5 @@ angular.module('portfolio.directives').
         return {
             templateUrl: 'views/sidebar.html',
             controller: 'SidebarController'
-        }
+        };
     }]);

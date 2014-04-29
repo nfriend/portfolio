@@ -2,11 +2,10 @@
 @import "../bower_components/fontawesome/less/font-awesome.less";
 @import "base.less";
 @import "sidebar.less";
+@import "header.less";
 
 .portfolio {
-
     .content {
-        padding-left: @sidebarWidth;
         width: 100%;
         height: 100%;
 
@@ -23,5 +22,52 @@
 
     .accented {
         color: #428BCA;
+    }
+
+    .main-view-container {
+        position: relative;
+
+        .main-view {
+            position: absolute;
+            width: 100%;
+
+            &.ng-enter {
+                opacity: 0;
+                margin-left: 300px;
+                transition: .5s margin cubic-bezier(0.19, 1, 0.22, 1), .5s opacity linear;
+
+                &.ng-enter-active {
+                    opacity: 1;
+                    margin-left: 0px;
+                }
+            }
+
+            &.ng-leave {
+                opacity: 1;
+                transition: .2s all ease-out;
+
+                &.ng-leave-active {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .content {
+        padding-left: @sidebarWidth-md;
+    }
+}
+
+@media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+    .content {
+        padding-left: @sidebarWidth-lg;
+    }
+}
+
+@media (min-width: @screen-xl-min) {
+    .content {
+        padding-left: @sidebarWidth-xl;
     }
 }
