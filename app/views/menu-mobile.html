@@ -1,0 +1,12 @@
+<div class="header" ng-click="sidebarIsOpen = !sidebarIsOpen">
+    <i class="fa fa-bars"></i>
+</div>
+<div class="sidebar-container hidden-md hidden-lg" ng-class="{'open': !sidebarIsOpen}" ng-swipe-left="sidebarIsOpen = !sidebarIsOpen">
+    <div ng-repeat="project in projects" class="link-container">
+        <a ng-href="#/{{project.page}}" ng-click="$parent.selected = project; $parent.sidebarIsOpen = !parent.sidebarIsOpen;" ng-class="{selected: selected === project}">
+            <h2 class="project-title">{{project.name}}</h2>
+        </a>
+    </div>
+</div>
+
+<div class="shim"></div>

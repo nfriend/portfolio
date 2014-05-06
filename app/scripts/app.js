@@ -3,6 +3,7 @@
 angular.module('portfolio', [
     'ngRoute',
     'ngAnimate',
+    'ngTouch',
     'portfolio.filters',
     'portfolio.services',
     'portfolio.directives',

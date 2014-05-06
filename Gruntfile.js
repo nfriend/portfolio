@@ -15,7 +15,8 @@ module.exports = function (grunt) {
                     remove: ['link', 'script'],
                     append: [
                       { selector: 'head', html: '<link href="application.min.css" rel="stylesheet">' },
-                      { selector: 'body', html: '<script src="application.min.js"></script>' }
+                      { selector: 'head', html: '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">' },
+                      { selector: 'body', html: '<script src="application.min.js"></script>' }
                     ]
                 },
                 src: 'app/index.html',
@@ -32,6 +33,7 @@ module.exports = function (grunt) {
                     remove: ['link'],
                     append: [
                       { selector: 'head', html: '<link href="application.css" rel="stylesheet">' },
+                      { selector: 'head', html: '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">' },
                     ]
                 },
                 src: 'app/index.html',
@@ -156,11 +158,11 @@ module.exports = function (grunt) {
         connect: {
             devbuild: {
                 options: {
-                    port: 4000,
+                    port: 9000,
                     livereload: true,
-                    open:true,
+                    open: true,
                     base: 'devbuild/',
-                    hostname: 'localhost'
+                    hostname: '*'
                 }
             },
             dist: {
@@ -169,7 +171,7 @@ module.exports = function (grunt) {
                     livereload: true,
                     open: true,
                     base: 'dist/',
-                    hostname: 'localhost'
+                    hostname: '*'
                 }
             }
         },

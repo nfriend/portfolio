@@ -1,0 +1,70 @@
+.menu-mobile {
+    .header {
+        position: fixed;
+        top: 0;
+        height: @sidebarHeight;
+        width: 100%;
+        background: @darkBlueBackgroundColor;
+        box-shadow: 0px -10px 25px 10px rgba(50, 50, 50, 0.75);
+
+        i {
+            font-size: 2.5em;
+            padding-top: 7px;
+            background: lighten(@darkBlueBackgroundColor, 20%);
+            width: @sidebarHeight + 4px;
+            height: 100%;
+            padding-left: 10px;
+            color: white;
+
+            &:active {
+                background: lighten(@darkBlueBackgroundColor, 40%);
+            }
+        }
+    }
+
+    .sidebar-container {
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        width: 90%;
+        left: -90%;
+        top: @sidebarHeight;
+        background: darken(@lightBackgroundColor, 10%);
+        padding-top:30px;
+        box-shadow: -10px 10px 25px 10px rgba(50, 50, 50, 0.75);
+        transition: left .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+        &.open {
+            left: 0;
+        }
+
+        .link-container {
+            height: 70px;
+            a {
+                position: absolute;
+                width: 100%;
+                text-decoration: none;
+                color: gray;
+
+                &.selected {
+                    color: black;
+                    background-color: darken(@lightBackgroundColor, 20%);
+                }
+
+                &:active {
+                    color: black;
+                    background-color: darken(@lightBackgroundColor, 30%);
+                }
+
+                h2 {
+                    padding: 0;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+
+    .shim {
+        height: @sidebarHeight;
+    }
+}

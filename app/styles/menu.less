@@ -1,4 +1,4 @@
-.sidebar {
+.menu {
     position: absolute;
     top: 0;
     height: 100%;
@@ -22,12 +22,12 @@
 
             &:active {
                 text-decoration: none;
-                background-color: darken(@lightBlueBackgroundColor, 10%);
+                background-color: darken(@lightBlueBackgroundColor, 30%);
                 color: white;
             }
 
             &.selected {
-                background-color: darken(@lightBlueBackgroundColor, 15%);
+                background-color: darken(@lightBlueBackgroundColor, 20%);
                 color: white;
 
                 .arrow-left {
@@ -53,7 +53,7 @@
 }
 
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
-    .sidebar {
+    .menu {
         width: @sidebarWidth-md;
         padding-top: 116px;
 
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
-    .sidebar {
+    .menu {
         width: @sidebarWidth-lg;
         padding-top: 123px;
 
@@ -107,7 +107,7 @@
 }
 
 @media (min-width: @screen-xl-min) {
-    .sidebar {
+    .menu {
         width: @sidebarWidth-xl;
         padding-top: 147px;
 
