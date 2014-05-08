@@ -10,12 +10,15 @@
 
     <hr />
 </div>
-<div class="mobile hidden-md hidden-lg">
-    <!--<h1 ng-if="!subtitle || subtitle == ''">{{title}}</h1>
-    <h1>{{subtitle}}</h1>-->
+<div class="mobile hidden-md hidden-lg" ng-if="subtitle && subtitle !== ''">
     <h1>
         <span class="title">{{title}}</span>
         <span class="accented">{{subtitle}}</span>
+    </h1>
+</div>
+<div class="mobile hidden-md hidden-lg" ng-if="!subtitle || subtitle === ''">
+    <h1>
+        <span class="nosubtitle">{{title}}</span>
     </h1>
 </div>
 
