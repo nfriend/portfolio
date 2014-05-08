@@ -16,7 +16,8 @@ module.exports = function (grunt) {
                     append: [
                       { selector: 'head', html: '<link href="application.min.css" rel="stylesheet">' },
                       { selector: 'head', html: '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">' },
-                      { selector: 'body', html: '<script src="application.min.js"></script>' }
+                      { selector: 'head', html: '<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />' },
+                      { selector: 'body', html: '<script src="application.min.js"></script>' }
                     ]
                 },
                 src: 'app/index.html',
@@ -34,6 +35,7 @@ module.exports = function (grunt) {
                     append: [
                       { selector: 'head', html: '<link href="application.css" rel="stylesheet">' },
                       { selector: 'head', html: '<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel="stylesheet" type="text/css">' },
+                      { selector: 'head', html: '<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />' },
                     ]
                 },
                 src: 'app/index.html',
@@ -44,13 +46,13 @@ module.exports = function (grunt) {
         copy: {
             dist: {
                 cwd: 'app',
-                src: ['fonts/**', 'images/**', 'views/**'],
+                src: ['fonts/**', 'images/**', 'views/**', 'favicon.ico'],
                 dest: 'dist',
                 expand: true
             },
             devbuild: {
                 cwd: 'app',
-                src: ['<%= dom_munger.data.jsRefsWithoutPath %>', '<%= dom_munger.data.cssRefsWithoutPath %>', 'fonts/**', 'images/**', 'views/**'],
+                src: ['<%= dom_munger.data.jsRefsWithoutPath %>', '<%= dom_munger.data.cssRefsWithoutPath %>', 'fonts/**', 'images/**', 'views/**', 'favicon.ico'],
                 dest: 'devbuild',
                 expand: true
             },
@@ -167,7 +169,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    port: 4000,
+                    port: 9000,
                     livereload: true,
                     open: true,
                     base: 'dist/',
