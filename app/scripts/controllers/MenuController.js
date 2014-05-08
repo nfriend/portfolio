@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('portfolio.controllers').
-    controller('MenuController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+    controller('MenuController', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
         $scope.projects = [
             { name: 'Home', page: 'home' },
             { name: 'SoyLib', page: 'soylib' },
@@ -28,4 +28,6 @@ angular.module('portfolio.controllers').
         $rootScope.alert = function () {
             alert('hello');
         }
+
+        $scope.$location = $location;
     }]);
