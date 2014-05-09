@@ -1,9 +1,13 @@
 @import "../bower_components/bootstrap/less/bootstrap.less";
 @import "../bower_components/fontawesome/less/font-awesome.less";
+@import (less) "../bower_components/SyntaxHighlighter/styles/shCore.css";
+/*@import (less) "../bower_components/SyntaxHighlighter/styles/shThemeDefault.css";*/
+@import "shThemeVS2012Light.less";
 @import "base.less";
 @import "menu.less";
 @import "menu-mobile.less";
 @import "header.less";
+
 
 .portfolio {
 
@@ -60,6 +64,17 @@
                 &.ng-leave-active {
                     opacity: 0;
                 }
+            }
+        }
+    }
+
+    .syntaxhighlighter {
+        overflow-y: hidden !important;
+
+        .code, .gutter {
+            .line {
+                padding-top: 2px !important;
+                padding-bottom: 2px !important;
             }
         }
     }

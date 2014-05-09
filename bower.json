@@ -5,14 +5,15 @@
     "angular": "1.x",
     "angular-resource": "1.x",
     "angular-cookies": "1.x",
-    "angular-sanitize": "1.x",
+    "angular-sanitize": "~1.2.16",
     "angular-route": "1.x",
     "angular-bootstrap": "~0.10.x",
     "jquery": "~1.x",
     "bootstrap": "~3.x",
     "fontawesome": "4.x",
     "angular-animate": "~1.2.16",
-    "angular-touch": "~1.2.16"
+    "angular-touch": "~1.2.16",
+    "SyntaxHighlighter": "~3.0.83"
   },
   "resolutions": {
     "angular": "1.x"

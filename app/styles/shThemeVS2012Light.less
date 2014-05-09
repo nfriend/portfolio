@@ -1,0 +1,120 @@
+@backgroundColor: darken(@lightBackgroundColor, 1%);
+
+.syntaxhighlighter {
+    background-color: @backgroundColor !important;
+
+    .line {
+        &.alt1 {
+            background-color: @backgroundColor !important;
+        }
+
+        &.alt2 {
+            background-color: @backgroundColor !important;
+        }
+
+        &.highlighted {
+            &.alt1, &.alt2 {
+                background-color: darken(@lightBackgroundColor, 10%) !important;
+            }
+
+            &.number {
+                color: #EAEAF2 !important;
+            }
+        }
+    }
+
+    table caption {
+        color: black !important;
+    }
+
+    .gutter {
+        color: #2B91AF !important;
+
+        .line {
+            border-right: 3px solid darken(@lightBlueBackgroundColor, 5%) !important;
+
+            &.highlighted {
+                background-color: darken(@lightBackgroundColor, 10%) !important;
+                color: #174C5C !important;
+            }
+        }
+    }
+
+    &.printing .line .content {
+        border: none !important;
+    }
+
+    &.collapsed {
+        overflow: visible !important;
+    }
+
+    &.collapsed .toolbar {
+        color: #808080 !important;
+        background: @backgroundColor !important;
+        border: 1px solid #808080 !important;
+
+        a {
+            color: #808080 !important;
+
+            &:hover {
+                color: #808080 !important;
+            }
+        }
+    }
+
+    .toolbar {
+        color: #000000 !important;
+        background: @backgroundColor !important;
+        border: none !important;
+
+        a {
+            color: #000000 !important;
+
+            &:hover {
+                color: #000000 !important;
+            }
+        }
+    }
+
+    .plain, .plain a {
+        color: #000000 !important;
+    }
+
+    .comments, .comments a {
+        color: #008000 !important;
+    }
+
+    .string, .string a {
+        color: #A31515 !important;
+    }
+
+    .keyword {
+        color: #0000FF !important;
+    }
+
+    .preprocessor {
+        color: #0000FF !important;
+    }
+
+    .variable {
+        color: #000000 !important;
+    }
+
+    .value {
+        color: #000000 !important;
+    }
+
+    .functions {
+        color: #000000 !important;
+    }
+
+    .constants {
+        color: #000000 !important;
+    }
+
+    .script {
+        font-weight: bold !important;
+        color: #808080 !important;
+        background-color: none !important;
+    }
+}

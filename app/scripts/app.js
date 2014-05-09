@@ -4,6 +4,7 @@ angular.module('portfolio', [
     'ngRoute',
     'ngAnimate',
     'ngTouch',
+    'ngSanitize',
     'portfolio.filters',
     'portfolio.services',
     'portfolio.directives',
