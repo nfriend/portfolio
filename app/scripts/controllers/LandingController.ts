@@ -5,7 +5,7 @@
 declare var SyntaxHighlighter: any;
 
 angular.module('portfolio.controllers').
-    controller('LandingController', ['$scope', function ($scope) {
+    controller('LandingController', ['$scope', ($scope) => {
         $scope.something = 'sofisodifjsdf';
         
         var code = " var replacementRegexes = [];\n\

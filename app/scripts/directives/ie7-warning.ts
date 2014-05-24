@@ -3,7 +3,7 @@
 'use strict';
 
 angular.module('portfolio.directives').
-    directive('ie7Warning', [function () {
+    directive('ie7Warning', [() => {
         return {
             templateUrl: 'views/ie7-warning.html'
         };

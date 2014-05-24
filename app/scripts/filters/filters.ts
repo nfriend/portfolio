@@ -3,8 +3,8 @@
 'use strict';
 
 angular.module('portfolio.filters').
-filter('interpolate', ['version', function (version) {
-    return function (text) {
+filter('interpolate', ['version', (version) => {
+    return (text) => {
         return String(text).replace(/\%VERSION\%/mg, version);
     };
 }]);

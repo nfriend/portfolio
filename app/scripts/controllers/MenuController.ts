@@ -2,8 +2,18 @@
 
 'use strict';
 
+interface IMenuControllerScope {
+    projects: Array<IProject>;
+    $location: any
+}
+
+interface IProject {
+    name: string;
+    page: string;
+}
+
 angular.module('portfolio.controllers').
-    controller('MenuController', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
+    controller('MenuController', ['$scope', '$rootScope', '$location', ($scope: IMenuControllerScope, $rootScope, $location: ng.ILocationProvider) => {
         $scope.projects = [
             { name: 'Home', page: 'home' },
             { name: 'SoyLib', page: 'soylib' },
@@ -13,23 +23,19 @@ angular.module('portfolio.controllers').
             { name: 'Theremin', page: 'theremin' }
         ];
 
+        $scope.$location = $location;
+
         $rootScope.sidePanelIsOpen = false;
 
-        $rootScope.openSidePanel = function () {
+        $rootScope.openSidePanel = () => {
             $rootScope.sidePanelIsOpen = true;
         }
 
-        $rootScope.closeSidePanel = function () {
+        $rootScope.closeSidePanel = () => {
             $rootScope.sidePanelIsOpen = false;
         }
 
-        $rootScope.toggleSidePanel = function () {
+        $rootScope.toggleSidePanel = () => {
             $rootScope.sidePanelIsOpen = !$rootScope.sidePanelIsOpen;
         }
-
-        $rootScope.alert = function () {
-            alert('hello');
-        }
-
-        $scope.$location = $location;
     }]);

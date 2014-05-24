@@ -3,7 +3,7 @@
 'use strict';
 
 angular.module('portfolio.directives').
-    directive('menu', [function () {
+    directive('menu', [() => {
         return {
             templateUrl: 'views/menu.html',
             controller: 'MenuController'
