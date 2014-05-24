@@ -1,4 +1,8 @@
+/// <reference path='../definitions/references.d.ts' />
+
 'use strict';
+
+declare var SyntaxHighlighter: any;
 
 angular.module('portfolio.controllers').
     controller('LandingController', ['$scope', function ($scope) {
