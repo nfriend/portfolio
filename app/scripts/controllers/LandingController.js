@@ -2,10 +2,8 @@
 
 'use strict';
 
-declare var SyntaxHighlighter: any;
-
 angular.module('portfolio.controllers').
-    controller('LandingController', ['$scope', ($scope) => {
+    controller('LandingController', ['$scope', function($scope) {
         $scope.something = 'sofisodifjsdf';
         
         var code = " var replacementRegexes = [];\n\

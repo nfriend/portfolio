@@ -3,9 +3,9 @@
 'use strict';
 
 angular.module('portfolio.directives').
-    directive('menu', [() => {
+    directive('menuMobile', [function () {
         return {
-            templateUrl: 'views/menu.html',
+            templateUrl: 'views/menu-mobile.html',
             controller: 'MenuController'
         };
     }]);

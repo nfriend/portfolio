@@ -3,8 +3,9 @@
 'use strict';
 
 angular.module('portfolio.directives').
-    directive('ie7Warning', [() => {
+    directive('menu', [function () {
         return {
-            templateUrl: 'views/ie7-warning.html'
+            templateUrl: 'views/menu.html',
+            controller: 'MenuController'
         };
     }]);

@@ -45,6 +45,7 @@
         .main-view {
             position: absolute;
             width: 100%;
+            z-index: -2;
 
             &.ng-enter {
                 opacity: 0;
@@ -63,6 +64,25 @@
 
                 &.ng-leave-active {
                     opacity: 0;
+                }
+            }
+
+            .portfolio-content {
+                max-width: 1024px;
+
+                .details-label {
+                    width: 150px;
+                    font-weight: 600;
+                    float: left;
+                }
+
+                .details-content {
+                    float: left;
+                }
+
+                .minor-break {
+                    width: 50%;
+                    float: left;
                 }
             }
         }

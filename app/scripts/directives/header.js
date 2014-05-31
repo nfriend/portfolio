@@ -3,7 +3,7 @@
 'use strict';
 
 angular.module('portfolio.directives').
-    directive('header', [() => {
+    directive('header', [function () {
 
         return {
             templateUrl: 'views/header.html',
@@ -11,7 +11,7 @@ angular.module('portfolio.directives').
                 title: '@',
                 subtitle: '@'
             },
-            compile: (element, attrs) => {
+            compile: function (element, attrs) {
                 if (!attrs.title) {
                     attrs.title = 'Portfolio:';
                 }

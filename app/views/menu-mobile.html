@@ -1,5 +1,11 @@
 <div class="header" ng-click="toggleSidePanel()">
     <i class="fa fa-bars"></i>
+    <h1 style="float: left">
+        <span class="title tiny-title" ng-if="$route.current.isMainPage">Portfolio</span>
+        <span class="title normal-title" ng-if="$route.current.isMainPage">Portfolio</span>
+        <span class="title normal-title" ng-if="!$route.current.isMainPage">Portfolio:</span>
+        <span class="accented" ng-if="!$route.current.isMainPage">{{$route.current.title}}</span>
+    </h1>
 </div>
 <div class="sidebar-container hidden-md hidden-lg" ng-class="{'open': sidePanelIsOpen}">
     <div ng-repeat="project in projects" class="link-container page-{{project.page}}">

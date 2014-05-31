@@ -17,9 +17,23 @@
             height: 100%;
             padding-left: 15px;
             color: white;
+            float: left;
 
             &:active {
                 background: lighten(@darkBlueBackgroundColor, 40%);
+            }
+        }
+
+        h1 {
+            margin-top: 13px;
+            margin-left: 13px;
+            font-size: 2.0em;
+            color: #d1ddeb;
+            white-space: nowrap;
+            float: left;
+
+            .accented {
+                color: white;
             }
         }
     }
@@ -78,5 +92,21 @@
 
     .shim {
         height: @sidebarHeight;
+    }
+}
+
+@media (min-width: 404px) {
+    .menu-mobile .header .title.tiny-title {
+        display: none;
+    }
+}
+
+@media (max-width: 403px) {
+    .menu-mobile .header .title.normal-title {
+        display: none;
+    }
+
+    .menu-mobile .header .title.tiny-title {
+        display: inline;
     }
 }
