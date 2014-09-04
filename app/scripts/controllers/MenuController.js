@@ -3,7 +3,7 @@
 //'use strict';
 
 angular.module('portfolio.controllers').
-    controller('MenuController', ['$scope', '$rootScope', '$route', function ($scope, $rootScope, $route, $location) {
+    controller('MenuController', ['$scope', '$rootScope', '$route', '$location', function ($scope, $rootScope, $route, $location) {
         $scope.projects = [
             { name: 'Home', page: 'home' },
             { name: 'SoyLib', page: 'soylib' },
