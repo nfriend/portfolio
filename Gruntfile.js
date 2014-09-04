@@ -143,7 +143,7 @@ module.exports = function (grunt) {
 
         uglify: {
             dist: {
-                src: 'dist-temp/**/*.js',
+                src: '<%= dom_munger.data.jsRefs %>',
                 dest: 'dist/application.min.js'
             }
         },
@@ -200,21 +200,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
-        //ts: {
-        //    devbuild: {
-        //        src: ['app/scripts/**/*.ts', '!app/scripts/definitions/**/*.ts'],
-        //        outDir: 'devbuild/scripts'
-        //    },
-        //    test: {
-        //        src: ['app/scripts/**/*.ts', 'test/**/*.ts', '!app/scripts/definitions/**/*.ts'],
-        //        outDir: 'test-temp/'
-        //    },
-        //    dist: {
-        //        src: ['app/scripts/**/*.ts', '!app/scripts/definitions/**/*.ts'],
-        //        outDir: 'dist-temp/'
-        //    }
-        //}
     });
 
     grunt.registerTask(
@@ -226,7 +211,7 @@ module.exports = function (grunt) {
     grunt.registerTask(
         'dist',
         'Compiles all of the assets and copies the files to the dist directory',
-        ['clean:dist', 'dom_munger:dist', 'copy:dist', 'less:dist', 'autoprefixer:dist', 'cssmin', 'test', 'uglify', 'htmlmin:dist', 'clean:diststylesheets', 'clean:distscripts']
+        ['clean:dist', 'dom_munger:dist', 'copy:dist', 'less:dist', 'autoprefixer:dist', 'cssmin', 'uglify', 'htmlmin:dist', 'clean:diststylesheets', 'clean:distscripts']
     );
 
     grunt.registerTask(

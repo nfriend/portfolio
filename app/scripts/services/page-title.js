@@ -1,6 +1,6 @@
 /// <reference path='../definitions/references.d.ts' />
 
-'use strict';
+//'use strict';
 
 //not currently used
 angular.module('portfolio.services')

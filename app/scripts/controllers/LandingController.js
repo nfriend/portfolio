@@ -1,6 +1,6 @@
 /// <reference path='../definitions/references.d.ts' />
 
-'use strict';
+//'use strict';
 
 angular.module('portfolio.controllers').
     controller('LandingController', ['$scope', function($scope) {

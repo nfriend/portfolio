@@ -1,6 +1,6 @@
 /// <reference path='../definitions/references.d.ts' />
 
-'use strict';
+//'use strict';
 
 angular.module('portfolio.directives').
     directive('menuMobile', [function () {
