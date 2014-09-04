@@ -7,6 +7,7 @@ angular.module('portfolio.controllers').
         $scope.projects = [
             { name: 'Home', page: 'home' },
             { name: 'SoyLib', page: 'soylib' },
+            { name: 'Inspirograph', page: 'inspirograph' },
             { name: 'NodeChat', page: 'nodechat' },
             { name: 'Rook', page: 'rook' },
             { name: 'PSI Dashboard', page: 'dashboard' },

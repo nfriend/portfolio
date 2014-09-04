@@ -41,11 +41,12 @@
 
     .main-view-container {
         position: relative;
+        height: 100%;
 
         .main-view {
             position: absolute;
             width: 100%;
-            z-index: -2;
+            height: 100%;
 
             &.ng-enter {
                 opacity: 0;
@@ -67,16 +68,23 @@
                 }
             }
 
-            .portfolio-content {
-                max-width: 1024px;
+            .scroll-container {
+                height: 100%;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding-right: 20px;
 
-                .info-row {
-                    margin-bottom:5px;
-                }
+                .portfolio-content {
+                    max-width: 1024px;
 
-                .minor-break {
-                    width: 50%;
-                    float: left;
+                    .info-row {
+                        margin-bottom: 5px;
+                    }
+
+                    .minor-break {
+                        width: 50%;
+                        float: left;
+                    }
                 }
             }
         }
@@ -94,20 +102,42 @@
     }
 }
 
+@media (max-width: @screen-sm-max) {
+    .content {
+        margin-top: @sidebarHeight;
+
+        .main-view {
+            padding-bottom: @sidebarHeight + 40px;
+        }
+    }
+}
+
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
     .content {
         padding-left: @sidebarWidth-md;
+
+        .main-view {
+            padding-bottom: 150px;
+        }
     }
 }
 
 @media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
     .content {
         padding-left: @sidebarWidth-lg;
+
+        .main-view {
+            padding-bottom: 160px;
+        }
     }
 }
 
 @media (min-width: @screen-xl-min) {
     .content {
         padding-left: @sidebarWidth-xl;
+
+        .main-view {
+            padding-bottom: 185px;
+        }
     }
 }

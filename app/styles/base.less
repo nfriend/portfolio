@@ -10,9 +10,19 @@
 @screen-xl-min: 1921px;
 
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: @lightBackgroundColor;
+}
+
+body, html {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 

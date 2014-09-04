@@ -11,9 +11,9 @@
     <title>Portfolio</title>
 
 </head>
-<body class="portfolio" ng-swipe-right="openSidePanel()" ng-swipe-left="closeSidePanel()">
+<body class="portfolio" ng-swipe-right="openSidePanel()" ng-swipe-left="closeSidePanel()" ng-class="{'side-panel-is-open': sidePanelIsOpen}">
     <div class="swipe-insurance"></div>
-    <div menu class="menu hidden-sm hidden-xs"/>
+    <div menu class="menu hidden-sm hidden-xs" />
     <div menu-mobile class="menu-mobile hidden-md hidden-lg" />
     <div class="content">
         <div class="row" id="header-spacer"></div>
@@ -28,7 +28,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/SyntaxHighlighter/scripts/XRegExp.js"></script>

@@ -24,6 +24,11 @@ angular.module('portfolio', [
             controller: 'LandingController', 
             title: 'SoyLib'
             });
+        $routeProvider.when('/inspirograph', {
+            templateUrl: 'views/inspirograph.html',
+            controller: 'LandingController',
+            title: 'Inspirograph'
+        });
         $routeProvider.when('/nodechat', {
             templateUrl: 'views/nodechat.html',
             controller: 'LandingController',
