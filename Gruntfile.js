@@ -46,13 +46,13 @@ module.exports = function (grunt) {
         copy: {
             dist: {
                 cwd: 'app',
-                src: ['fonts/**', 'images/**', 'views/**', 'favicon.ico'],
+                src: ['fonts/**', 'images/**', 'views/**', 'favicon.ico', 'old-browser.html'],
                 dest: 'dist',
                 expand: true
             },
             devbuild: {
                 cwd: 'app',
-                src: ['<%= dom_munger.data.jsRefsWithoutPath %>', '<%= dom_munger.data.cssRefsWithoutPath %>', 'fonts/**', 'images/**', 'views/**', 'favicon.ico'],
+                src: ['<%= dom_munger.data.jsRefsWithoutPath %>', '<%= dom_munger.data.cssRefsWithoutPath %>', 'fonts/**', 'images/**', 'views/**', 'favicon.ico', 'old-browser.html'],
                 dest: 'devbuild',
                 expand: true
             },
@@ -67,7 +67,7 @@ module.exports = function (grunt) {
                 src: ['images/**'],
                 dest: 'devbuild',
                 expand: true
-            }
+            },
         },
 
         clean: {
@@ -125,7 +125,6 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     removeComments: true,
-                    collapseWhitespace: true
                 },
                 expand: true,
                 cwd: 'dist',

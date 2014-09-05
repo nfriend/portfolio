@@ -39,6 +39,12 @@
         color: #428BCA;
     }
 
+    .code-container {
+        background-color: @codeBackgroundColor;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
     .main-view-container {
         position: relative;
         height: 100%;
@@ -92,6 +98,13 @@
 
     .syntaxhighlighter {
         overflow-y: hidden !important;
+
+        // fix conflict between bootstrap "container" class and SyntaxHighlighter
+        .container {
+            &:before, &:after {
+                content: none;
+            }
+        }
 
         .code, .gutter {
             .line {

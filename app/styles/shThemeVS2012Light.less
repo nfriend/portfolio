@@ -1,15 +1,13 @@
-@backgroundColor: darken(@lightBackgroundColor, 1%);
-
 .syntaxhighlighter {
-    background-color: @backgroundColor !important;
+    background-color: @codeBackgroundColor !important;
 
     .line {
         &.alt1 {
-            background-color: @backgroundColor !important;
+            background-color: @codeBackgroundColor;
         }
 
         &.alt2 {
-            background-color: @backgroundColor !important;
+            background-color: @codeBackgroundColor !important;
         }
 
         &.highlighted {
@@ -50,7 +48,7 @@
 
     &.collapsed .toolbar {
         color: #808080 !important;
-        background: @backgroundColor !important;
+        background: @codeBackgroundColor !important;
         border: 1px solid #808080 !important;
 
         a {
@@ -64,7 +62,7 @@
 
     .toolbar {
         color: #000000 !important;
-        background: @backgroundColor !important;
+        background: @codeBackgroundColor !important;
         border: none !important;
 
         a {

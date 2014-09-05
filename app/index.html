@@ -10,6 +10,12 @@
 
     <title>Portfolio</title>
 
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        window.location = "old-browser.html";
+    </script>
+    <![endif]-->
+
 </head>
 <body class="portfolio" ng-swipe-right="openSidePanel()" ng-swipe-left="closeSidePanel()" ng-class="{'side-panel-is-open': sidePanelIsOpen}">
     <div class="swipe-insurance"></div>
@@ -33,6 +39,9 @@
     <script src="bower_components/SyntaxHighlighter/scripts/XRegExp.js"></script>
     <script src="bower_components/SyntaxHighlighter/scripts/shCore.js"></script>
     <script src="bower_components/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script src="bower_components/SyntaxHighlighter/scripts/shBrushXml.js"></script>
+    <script src="bower_components/SyntaxHighlighter/scripts/shBrushCSharp.js"></script>
+    <script src="bower_components/SyntaxHighlighter/scripts/shBrushCss.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
@@ -59,5 +68,6 @@
     <script src="scripts/directives/menu-mobile.js"></script>
     <script src="scripts/directives/header.js"></script>
     <script src="scripts/directives/ie7-warning.js"></script>
+    <script src="scripts/directives/code.js"></script>
 </body>
 </html>
