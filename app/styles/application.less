@@ -41,8 +41,24 @@
 
     .code-container {
         background-color: @codeBackgroundColor;
-        padding: 10px;
         border: 1px solid #ddd;
+        margin-bottom: 10px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05)
+    }
+
+    .inline-code {
+        background-color: @inlineCodeBackgroundColor;
+        font-family: Consolas, monospace;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .demo-image {
+        margin-bottom: 10px;
+
+        &.bordered {
+            border: 1px solid #ddd;
+        }
     }
 
     .main-view-container {
