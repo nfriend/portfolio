@@ -10,6 +10,8 @@
 
     <title>Portfolio</title>
 
+    <link rel="stylesheet" type="text/css" href="styles/application.css" />
+
     <!--[if lt IE 9]>
     <script type="text/javascript">
         window.location = "old-browser.html";
@@ -19,11 +21,11 @@
 </head>
 <body class="portfolio" ng-swipe-right="openSidePanel()" ng-swipe-left="closeSidePanel()" ng-class="{'side-panel-is-open': sidePanelIsOpen}">
     <div class="swipe-insurance"></div>
-    <div menu class="menu hidden-sm hidden-xs" />
-    <div menu-mobile class="menu-mobile hidden-md hidden-lg" />
+    <div menu class="menu hidden-sm hidden-xs"></div>
+    <div menu-mobile class="menu-mobile hidden-md hidden-lg"></div>
     <div class="content">
         <div class="row" id="header-spacer"></div>
-        <div ie7-warning />
+        <div ie7-warning ></div>
         <div class="main-view-container">
             <div ng-view class="container-fluid main-view" ng-swipe-right="alert()"></div>
         </div>
@@ -57,7 +59,7 @@
     <script src="scripts/filters/filters.js"></script>
 
     <!--services-->
-    <script src="scripts/services/page-title.js"></script>
+    <script src="scripts/services/s.js"></script>
 
     <!--controllers-->
     <script src="scripts/controllers/LandingController.js"></script>

@@ -12,18 +12,18 @@ angular.module('portfolio', [
     'portfolio.directives',
     'portfolio.controllers'
 ]).
-    config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/home', { 
-            templateUrl: 'views/home.html', 
-            controller: 'LandingController', 
+    config(['$routeProvider', function ($routeProvider, $s) {
+        $routeProvider.when('/home/', {
+            templateUrl: 'views/home.html',
+            controller: 'LandingController',
             title: 'Home',
             isMainPage: true
         });
-        $routeProvider.when('/soylib', { 
-            templateUrl: 'views/soylib.html', 
-            controller: 'LandingController', 
+        $routeProvider.when('/soylib', {
+            templateUrl: 'views/soylib.html',
+            controller: 'LandingController',
             title: 'SoyLib'
-            });
+        });
         $routeProvider.when('/inspirograph', {
             templateUrl: 'views/inspirograph.html',
             controller: 'LandingController',
@@ -50,5 +50,19 @@ angular.module('portfolio', [
             title: 'Theremin'
         });
 
-        $routeProvider.otherwise({ redirectTo: '/home' });
-    }]);
+        $routeProvider.when('/:s', {
+            redirectTo: '/home/'
+        });
+
+        $routeProvider.otherwise({
+            redirectTo: '/home/'
+        });
+    }])
+.run(['$rootScope', '$location', 's', function ($rootScope, $location, s) {
+    $rootScope.$on('$locationChangeStart', function (event, next, current) {
+        if ($location.search()['s']) {
+            $rootScope.s = s($location.search()['s']);
+            $location.search('s', null);
+        }
+    });
+}]);

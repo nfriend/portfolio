@@ -81,12 +81,13 @@
     <Content Include="scripts\filters\filters.js" />
     <Content Include="scripts\google-analytics.js" />
     <Content Include="scripts\modules.js" />
-    <Content Include="scripts\services\page-title.js" />
-    <Content Include="styles\application.css" />
-    <Content Include="styles\application.min.css" />
-    <Content Include="styles\base.css" />
-    <Content Include="styles\base.min.css" />
-    <Content Include="styles\shThemeVS2012Dark.css" />
+    <Content Include="scripts\services\s.js" />
+    <Content Include="styles\application.css">
+      <DependentUpon>application.less</DependentUpon>
+    </Content>
+    <Content Include="styles\application.min.css">
+      <DependentUpon>application.css</DependentUpon>
+    </Content>
     <Content Include="test.html" />
     <Content Include="views\dashboard.html" />
     <Content Include="views\header.html" />
@@ -115,14 +116,15 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="styles\application.css.map" />
     <Content Include="styles\application.less" />
-    <Content Include="styles\base.css.map" />
-    <Content Include="styles\base.less" />
-    <Content Include="styles\header.less" />
-    <Content Include="styles\menu-mobile.less" />
-    <Content Include="styles\menu.less" />
-    <Content Include="styles\shThemeVS2012Light.less" />
+    <Content Include="styles\_base.less" />
+    <Content Include="styles\_header.less" />
+    <Content Include="styles\_menu-mobile.less" />
+    <Content Include="styles\_menu.less" />
+    <Content Include="styles\_shThemeVS2012Light.less" />
+    <Content Include="styles\application.css.map">
+      <DependentUpon>application.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
