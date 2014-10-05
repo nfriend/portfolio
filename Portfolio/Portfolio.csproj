@@ -66,6 +66,7 @@
     <Content Include="images\modals.gif" />
     <Content Include="images\quiet-notification.gif" />
     <Content Include="images\quiet-progress.gif" />
+    <Content Include="images\signature.png" />
     <Content Include="images\tabs.gif" />
     <Content Include="images\transitions.gif" />
     <Content Include="index.html" />

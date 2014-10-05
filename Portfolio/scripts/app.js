@@ -13,7 +13,7 @@ angular.module('portfolio', [
     'portfolio.controllers'
 ]).
     config(['$routeProvider', function ($routeProvider, $s) {
-        $routeProvider.when('/home/', {
+        $routeProvider.when('/home', {
             templateUrl: 'views/home.html',
             controller: 'LandingController',
             title: 'Home',
@@ -51,11 +51,11 @@ angular.module('portfolio', [
         });
 
         $routeProvider.when('/:s', {
-            redirectTo: '/home/'
+            redirectTo: '/home'
         });
 
         $routeProvider.otherwise({
-            redirectTo: '/home/'
+            redirectTo: '/home'
         });
     }])
 .run(['$rootScope', '$location', 's', function ($rootScope, $location, s) {
