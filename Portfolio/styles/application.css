@@ -6173,8 +6173,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../bower_components/fontawesome/fonts/fontawesome-webfont.eot?v=4.2.0');
-  src: url('../bower_components/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../bower_components/fontawesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../bower_components/fontawesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../bower_components/fontawesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -8534,6 +8534,11 @@ h5 {
 .portfolio .syntaxhighlighter .gutter .line {
   padding-top: 2px !important;
   padding-bottom: 2px !important;
+}
+.portfolio .gear {
+  fill: #bbb;
+  stroke: black;
+  fill-rule: evenodd;
 }
 @media (max-width: 991px) {
   .content {

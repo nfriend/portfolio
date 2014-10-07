@@ -61,7 +61,7 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="images\animated-expander.GIF" />
+    <Content Include="images\animated-expander.gif" />
     <Content Include="images\modal-progress-bar.gif" />
     <Content Include="images\modals.gif" />
     <Content Include="images\quiet-notification.gif" />
@@ -94,6 +94,7 @@
     <Content Include="views\header.html" />
     <Content Include="views\home.html" />
     <Content Include="views\ie7-warning.html" />
+    <Content Include="views\codeexamples.html" />
     <Content Include="views\inspirograph.html" />
     <Content Include="views\menu-mobile.html" />
     <Content Include="views\menu.html" />
