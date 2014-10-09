@@ -57,8 +57,8 @@
         <div code brush="javascript">
             var svg = 'M ' + options.radius + ' 0 ';
             for (var i = 0; i &lt; options.toothCount; i++) {
-                svg += 'A' + options.radius + ' ' + options.radius + ' ' + 0 + ' ' + 0 + ' ' + 1 + ' ' + newX + ' ' + newY;
-                // etc....
+            svg += 'A' + options.radius + ' ' + options.radius + ' ' + 0 + ' ' + 0 + ' ' + 1 + ' ' + newX + ' ' + newY;
+            // etc....
             }
 
             return svg;
@@ -67,9 +67,9 @@
         <div code brush="javascript">
             var pathBuilder = new SVG.PathBuilder(),
             pathBuilder.addCommand(new SVG.MCommand(options.radius, 0));
-            for (var i = 0; i < options.toothCount; i++) {
-                pathBuilder.addCommand(new SVG.ACommand(options.radius, options.radius, 0, false, true, newX, newY));
-                // etc....
+            for (var i = 0; i &lt; options.toothCount; i++) {
+            pathBuilder.addCommand(new SVG.ACommand(options.radius, options.radius, 0, false, true, newX, newY));
+            // etc....
             }
 
             return pathBuilder.toString();
@@ -77,9 +77,23 @@
         <p>I was initially tempted to forgo this extra abstraction and just build the strings by hand, but the extra time it took to write this abstraction quckly paid off when I moved on to more complex SVG drawings (like the <a href="https://github.com/nfriend/inspirograph/blob/master/Spirograph/scripts/Shapes/RingGear.ts">Ring Gear</a> and the <a href="https://github.com/nfriend/inspirograph/blob/master/Spirograph/scripts/Shapes/Beam.ts">Beam</a>).</p>
         <br />
         <!--#endregion-->
-
         <!--#region Designing the interactions-->
         <h5>Designing the interactions</h5>
+        <p>
+            Making Inspirograph natural to use turned out to be much more difficult that I originally thought.
+            Initially, I used a simple click and drag algorithm that based the rotating gear's position on the mouse's angle with respect to the center of the screen.
+            This proved to be overly simplistic, however.  For example, take this gear combination:
+        </p>
+        <img src="images/gear-example.png" />
+        <div class="cleared"></div>
+        <br />
+        <p>
+            If the user begins dragging on the left edge of the inner gear, the mouse is actually to the <em>right</em> of the center of the screen.
+            This caused the gear to unexpectedly jump depending on where the user initiated the drag.
+            To solve this, I temporarily "move" the center of the screen relative to the start location of the pointer.
+            Then, as the user begins to drag, I slowly ease this virtual "center" back to the true center of the screen.
+            You can witness this yourself by turning on the "cursor tracker" option by pressing <span class="keyboard-key">T</span>.
+        </p>
         <br />
         <!--#endregion-->
     </div>

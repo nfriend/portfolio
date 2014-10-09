@@ -62,6 +62,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="images\animated-expander.gif" />
+    <Content Include="images\gear-example.jpg" />
     <Content Include="images\modal-progress-bar.gif" />
     <Content Include="images\modals.gif" />
     <Content Include="images\quiet-notification.gif" />
