@@ -61,8 +61,18 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\53ded9086159a.png" />
+    <Content Include="images\53dee33419f3a.png" />
+    <Content Include="images\53f6ad68457f3.png" />
+    <Content Include="images\53fbccc38c978.png" />
+    <Content Include="images\541640052bc88.png" />
     <Content Include="images\animated-expander.gif" />
     <Content Include="images\gear-example.jpg" />
+    <Content Include="images\inspirograph1.jpg" />
+    <Content Include="images\inspirograph2.jpg" />
+    <Content Include="images\inspirograph3.jpg" />
+    <Content Include="images\inspirograph4.jpg" />
+    <Content Include="images\inspirograph5.jpg" />
     <Content Include="images\modal-progress-bar.gif" />
     <Content Include="images\modals.gif" />
     <Content Include="images\quiet-notification.gif" />
