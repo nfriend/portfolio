@@ -10,7 +10,10 @@
         </div>
         <div class="row info-row">
             <div class="col-sm-2"><b>Technologies:</b></div>
-            <div class="col-sm-10">WPF, Microsoft Prism</div>
+            <div class="col-sm-10">
+                <a href="http://msdn.microsoft.com/en-us/library/ms754130(v=vs.110).aspx">WPF</a>,
+                <a href="http://msdn.microsoft.com/en-us/library/ff648465.aspx">Microsoft Prism</a>
+            </div>
         </div>
         <div class="row info-row">
             <div class="col-sm-2"><b>Project type:</b></div>
@@ -51,22 +54,22 @@
         <p>To configure an expander to display validation warnings, specify its style and connect it to its target elements using the <span class="inline-code">ErrorMessages</span> attached property:</p>
         <div code brush="xml">
             &lt;Expander&gt;
-                &lt;Expander.Style&gt;
-                    &lt;Style TargetType=&quot;{x:Type Expander}&quot; BasedOn=&quot;{StaticResource ErrorAwareExpanderStyle}&quot;&gt;
-                        &lt;Setter Property=&quot;ap:ErrorAggregator.ErrorMessages&quot;&gt;
-                            &lt;Setter.Value&gt;
-                                &lt;MultiBinding Converter=&quot;{converters:TargetsConverter}&quot;&gt;
-                                    &lt;Binding ElementName=&quot;FirstNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                                    &lt;Binding ElementName=&quot;LastNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                                    &lt;Binding ElementName=&quot;AgeTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                                    &lt;Binding ElementName=&quot;SocialSecurityTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                                &lt;/MultiBinding&gt;
-                            &lt;/Setter.Value&gt;
-                        &lt;/Setter&gt;
-                    &lt;/Style&gt;
-                &lt;/Expander.Style&gt;
+            &lt;Expander.Style&gt;
+            &lt;Style TargetType=&quot;{x:Type Expander}&quot; BasedOn=&quot;{StaticResource ErrorAwareExpanderStyle}&quot;&gt;
+            &lt;Setter Property=&quot;ap:ErrorAggregator.ErrorMessages&quot;&gt;
+            &lt;Setter.Value&gt;
+            &lt;MultiBinding Converter=&quot;{converters:TargetsConverter}&quot;&gt;
+            &lt;Binding ElementName=&quot;FirstNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;Binding ElementName=&quot;LastNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;Binding ElementName=&quot;AgeTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;Binding ElementName=&quot;SocialSecurityTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;/MultiBinding&gt;
+            &lt;/Setter.Value&gt;
+            &lt;/Setter&gt;
+            &lt;/Style&gt;
+            &lt;/Expander.Style&gt;
 
-                &lt;!-- expander content here --&gt;
+            &lt;!-- expander content here --&gt;
 
             &lt;/Expander&gt;
         </div>
@@ -86,7 +89,7 @@
             [MainModule("My Files", "MyFilesDefaulView", ColorTheme.Red)]
             public class MyFilesModule : IModule
             {
-                ....
+            ....
         </div>
         <p>The <span class="inline-code">[MainModule]</span> attribute provides meta-data (like the tab title and module's theme color) that SoyLib uses when rendering the module's tab.</p>
         <p>By default, a subtle sliding animation is applied when switching modules to give the user the feeling of a context switch:</p>
