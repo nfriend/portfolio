@@ -3,7 +3,7 @@
     <div class="portfolio-content">
         <!--#region Intro-->
         <p>
-            NodeChat is simple side project I used to familiarize myself with a few trendy front-end technologies.
+            NodeChat is simple chat client I built to familiarize myself with some trendy front-end technologies.
         </p>
         <br />
         <div class="row info-row">
@@ -46,7 +46,6 @@
         </p>
         <br />
         <!--#endregion-->
-
         <!--#region Emoticons-->
         <h5>Emoticons</h5>
         <p>
@@ -56,18 +55,20 @@
             For example, <span class="inline-code">[like]</span> will display as <i class="nodechat-emoticon-example fa fa-thumbs-o-up"></i>.
         </p>
         <p>
-            In addition to these standard emoticons, NodeChat is able to display any icon in the Font Awesome library by enclosing the icon's class inside [[double square brackets]] (i.e. <span class="inline-code">[[fa-puzzle-piece]]</span> shows up as <i class="nodechat-emoticon-example fa fa-puzzle-piece"></i>).
+            In addition to these standard emoticons, NodeChat is able to display any icon in the Font Awesome library by enclosing the icon's class inside [[double square brackets]]
+            (i.e. <span class="inline-code">[[fa-puzzle-piece]]</span> shows up as <i class="nodechat-emoticon-example fa fa-puzzle-piece"></i>).
             For the curious, the implementation of the emoticon filter can be found <a href="https://github.com/nfriend/NodeChat/blob/master/app/scripts/filters/emoticon-filter.js">here</a>.
-            
         </p>
         <br />
         <!--#endregion-->
-
         <!--#region Profanity Filter-->
         <h5>Profanity filter</h5>
         <p>
-
+            One of the more entertaining pieces of NodeChat is its built-in profanity filter.
+            NodeChat does its best to replace the most common dirty language with an innocuous translation, leading to entertaining sentences like <em>"Mother pancaking piece of sheer beauty elbow mango smoothie!"</em>.
+            See how the filter works for yourself <a href="https://github.com/nfriend/NodeChat/blob/master/app/scripts/services/profanity-cleanser.js">here</a>.
         </p>
+        <br />
         <br />
         <!--#endregion-->
     </div>
