@@ -40,11 +40,33 @@
         <br />
         <!--#endregion-->
 
-        <h5>Controls</h5>
+        <h5>Making noise</h5>
         <p>
             The Leap Motion controller provides detailed 3D spatial information for all hands within its detection radius.
             In addition, it reports the position and angle of each palm relative to the ground.
-            With this many data points, I was able to give each modifier (i.e. pitch, vibrato) its own axis, giving the user full control over the theremin's output.
+            With this many data points, I was able to give each modifier its own axis, giving the user full control over the theremin's output:
         </p>
+        <div class="row theremin-control-list">
+            <div class="col-xs-3 col-sm-2"><b>Pitch:</b></div>
+            <div class="col-xs-9 col-sm-10">Hand #1, Y axis</div>
+        </div>
+        <div class="row theremin-control-list">
+            <div class="col-xs-3 col-sm-2"><b>Volume:</b></div>
+            <div class="col-xs-9 col-sm-10">Hand #1, Z axis</div>
+        </div>
+        <div class="row theremin-control-list">
+            <div class="col-xs-3 col-sm-2"><b>Tone:</b></div>
+            <div class="col-xs-9 col-sm-10">Hand #1, palm rotation</div>
+        </div>
+        <div class="row theremin-control-list">
+            <div class="col-xs-3 col-sm-2"><b>Vibrato speed:</b></div>
+            <div class="col-xs-9 col-sm-10">Hand #2, Y axis</div>
+        </div>
+        <div class="row theremin-control-list">
+            <div class="col-xs-3 col-sm-2"><b>Vibrato intesity:</b></div>
+            <div class="col-xs-9 col-sm-10">Hand #2, Z axis</div>
+        </div>
+        <br />
+        <br />
     </div>
 </div>
