@@ -62,8 +62,8 @@
         <div code brush="javascript">
             var svg = 'M ' + options.radius + ' 0 ';
             for (var i = 0; i &lt; options.toothCount; i++) {
-            svg += 'A' + options.radius + ' ' + options.radius + ' ' + 0 + ' ' + 0 + ' ' + 1 + ' ' + newX + ' ' + newY;
-            // etc....
+                svg += 'A' + options.radius + ' ' + options.radius + ' ' + 0 + ' ' + 0 + ' ' + 1 + ' ' + newX + ' ' + newY;
+                // etc....
             }
 
             return svg;
@@ -73,8 +73,8 @@
             var pathBuilder = new SVG.PathBuilder(),
             pathBuilder.addCommand(new SVG.MCommand(options.radius, 0));
             for (var i = 0; i &lt; options.toothCount; i++) {
-            pathBuilder.addCommand(new SVG.ACommand(options.radius, options.radius, 0, false, true, newX, newY));
-            // etc....
+                pathBuilder.addCommand(new SVG.ACommand(options.radius, options.radius, 0, false, true, newX, newY));
+                // etc....
             }
 
             return pathBuilder.toString();
