@@ -10,8 +10,11 @@ module.exports = function (grunt) {
                       { selector: 'script', attribute: 'src', writeto: 'jsRefs', isPath: true },
                       { selector: 'script', attribute: 'src', writeto: 'jsRefsWithoutPath', isPath: false }
                     ],
-                    remove: ['script'],
-                    append: [{ selector: 'body', html: '<script src="application.min.js"></script>' }]
+                    remove: ['script', '.dom-munger-remove'],
+                    append: [
+                        { selector: 'body', html: '<script src="application.min.js"></script>' },
+                        { selector: 'body', html: '<link rel="stylesheet" type="text/css" href="styles/application.min.css" />' }
+                    ]
                 },
                 src: 'index.html',
                 dest: 'dist/index.html'
