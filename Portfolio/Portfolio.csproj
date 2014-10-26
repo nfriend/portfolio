@@ -67,7 +67,9 @@
     <Content Include="images\53fbccc38c978.png" />
     <Content Include="images\541640052bc88.png" />
     <Content Include="images\animated-expander.gif" />
+    <Content Include="images\card-back.PNG" />
     <Content Include="images\gear-example.jpg" />
+    <Content Include="images\green-card.png" />
     <Content Include="images\inspirograph1.jpg" />
     <Content Include="images\inspirograph2.jpg" />
     <Content Include="images\inspirograph3.jpg" />
@@ -77,6 +79,9 @@
     <Content Include="images\modals.gif" />
     <Content Include="images\quiet-notification.gif" />
     <Content Include="images\quiet-progress.gif" />
+    <Content Include="images\rook-card.png" />
+    <Content Include="images\rook1.png" />
+    <Content Include="images\rook2.png" />
     <Content Include="images\signature.png" />
     <Content Include="images\tabs.gif" />
     <Content Include="images\transitions.gif" />
