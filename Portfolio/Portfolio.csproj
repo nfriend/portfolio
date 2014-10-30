@@ -143,6 +143,7 @@
     <Content Include="styles\application.css.map">
       <DependentUpon>application.css</DependentUpon>
     </Content>
+    <Content Include="Nathan Friend - Résumé.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

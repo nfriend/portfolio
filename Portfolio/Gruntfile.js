@@ -24,7 +24,7 @@ module.exports = function (grunt) {
         copy: {
             dist: {
                 cwd: '.',
-                src: ['fonts/**', 'images/**', 'views/**', 'favicon.ico', 'old-browser.html', 'styles/application.min.css'],
+                src: ['fonts/**', 'images/**', 'views/**', 'favicon.ico', 'old-browser.html', 'styles/application.min.css', '**/*.pdf'],
                 dest: 'dist',
                 expand: true
             }
