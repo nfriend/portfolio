@@ -12,6 +12,7 @@ angular.module('portfolio.controllers').
             { name: 'Rook', page: 'rook' },
             { name: 'PSI Dashboard', page: 'dashboard' },
             { name: 'Theremin', page: 'theremin' },
+            { name: 'Location Manager', page: 'locationmanager' },
             { name: 'Portfolio', page: 'portfolio' }
         ];
 
