@@ -54,6 +54,11 @@ angular.module('portfolio', [
             controller: 'LandingController',
             title: 'Portfolio'
         });
+        $routeProvider.when('/locationmanager', {
+            templateUrl: 'views/locationmanager.html',
+            controller: 'LandingController',
+            title: 'Location Manager'
+        });
 
         $routeProvider.when('/:s', {
             redirectTo: '/home'
