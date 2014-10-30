@@ -106,6 +106,7 @@
       <DependentUpon>application.css</DependentUpon>
     </Content>
     <Content Include="test.html" />
+    <Content Include="views\portfolio.html" />
     <Content Include="views\dashboard.html" />
     <Content Include="views\header.html" />
     <Content Include="views\home.html" />

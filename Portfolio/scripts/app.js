@@ -49,6 +49,11 @@ angular.module('portfolio', [
             controller: 'LandingController',
             title: 'Theremin'
         });
+        $routeProvider.when('/portfolio', {
+            templateUrl: 'views/portfolio.html',
+            controller: 'LandingController',
+            title: 'Portfolio'
+        });
 
         $routeProvider.when('/:s', {
             redirectTo: '/home'

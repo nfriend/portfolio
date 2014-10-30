@@ -11,7 +11,8 @@ angular.module('portfolio.controllers').
             { name: 'NodeChat', page: 'nodechat' },
             { name: 'Rook', page: 'rook' },
             { name: 'PSI Dashboard', page: 'dashboard' },
-            { name: 'Theremin', page: 'theremin' }
+            { name: 'Theremin', page: 'theremin' },
+            { name: 'Portfolio', page: 'portfolio' }
         ];
 
         $scope.$location = $location;
