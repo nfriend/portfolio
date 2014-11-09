@@ -34,6 +34,34 @@
         <br />
         <!--#endregion-->
         <!--#region-->
+        <p>
+            Location Manager is an intricate, complex software solution to the problem of large-scale, international research station data management.
+            Unfortunately, due to the confidential nature of the application and the data it handles, little can be disclosed about LM's inner workings.
+            Here are just a few of the high-level design considerations that help make LM a successful enterprise-level production application:
+        </p>
+        <ul>
+            <li>
+                <b>Speed.</b>
+                LM has dependencies on several legacy systems, many of which have less than ideal response times.
+                LM aggresively caches almost all the data it uses and relies heavily on lazy loading in order to optimize startup times.
+            </li>
+            <li>
+                <b>Reliability.</b>
+                In addition to performance issues, many of these same legacy systems have a habit of going down at just the wrong time.
+                Because LM is a mission-critical application, even moderate levels of volatility are unacceptable.
+                Where possible, LM has been designed to run "disconnected" from these systems and allow end-users to maintain productivity.
+            </li>
+            <li>
+                <b>Backwards compatibility.</b>
+                Location Manager will serve as a replacement for a number of legacy application within Pioneer's application ecosystem.
+                LM maintains backwards compatibility where feasible and provides new alternatives for functionality slated for retirement.
+            </li>
+            <li>
+                <b>Longevity.</b>
+                DuPont Pioneer understands Location Manager to be a long-term investment.
+                Great pains have been taken to ensure that Location Manager will be maintainable and extensible for years after its release.
+            </li>
+        </ul>
         <!--#endregion-->
     </div>
 </div>

@@ -8160,8 +8160,12 @@ html {
   height: 100%;
   overflow: hidden;
 }
-p {
+p,
+ul {
   font-size: 1.2em;
+}
+li {
+  margin-bottom: 5px;
 }
 hr {
   border-top: 1px solid #ddd;
