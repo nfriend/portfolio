@@ -4,7 +4,7 @@
         <!--#region Intro-->
         <p>
             Location Manager (LM) is a multi-crop, globalized WPF application used by crop breeders
-            to easily interface with the organization's many legacy databases.
+            to interface with the organization's many legacy databases.
         </p>
         <br />
         <div class="row info-row">
@@ -37,13 +37,13 @@
         <p>
             Location Manager is an intricate, complex software solution to the problem of large-scale, international research station data management.
             Unfortunately, due to the confidential nature of the application and the data it handles, little can be disclosed about LM's inner workings.
-            Here are just a few of the high-level design considerations that help make LM a successful enterprise-level production application:
+            Here are just a few of the high-level considerations that went into LM's architectural design:
         </p>
         <ul>
             <li>
                 <b>Speed.</b>
                 LM has dependencies on several legacy systems, many of which have less than ideal response times.
-                LM aggresively caches almost all the data it uses and relies heavily on lazy loading in order to optimize startup times.
+                LM aggresively caches almost all the data it uses and relies heavily on lazy loading to optimize startup times.
             </li>
             <li>
                 <b>Reliability.</b>
