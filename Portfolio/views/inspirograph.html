@@ -42,7 +42,7 @@
         <p>
             The simplest way to generate the gear visuals would have been to create a series of .PNGs, one for each available size.
             However, I wanted the flexibility to easily create new gear sizes in the future (and potentially let users create custom gears).
-            This meant programmatically assembling SVG command strings into an SVG path that described the gear's toothy perimiter.
+            This meant programmatically assembling SVG command strings into an SVG path that described the gear's toothy perimeter.
             To accomplish this, I had to dust off some of the trigonometry I hadn't touched since 10<sup>th</sup> grade Geometry.
             <a href="https://github.com/nfriend/inspirograph/blob/master/Spirograph/scripts/Shapes/Gear.ts">The result was rather headache-inducing</a>, but ultimately allowed for a great deal of flexibility down the road.
         </p>
@@ -80,7 +80,7 @@
 
             return pathBuilder.toString();
         </div>
-        <p>I was initially tempted to forgo this extra abstraction and just build the strings by hand, but the extra time it took to write this abstraction quckly paid off when I moved on to more complex SVG drawings (like the <a href="https://github.com/nfriend/inspirograph/blob/master/Spirograph/scripts/Shapes/RingGear.ts">Ring Gear</a> and the <a href="https://github.com/nfriend/inspirograph/blob/master/Spirograph/scripts/Shapes/Beam.ts">Beam</a>).</p>
+        <p>I was initially tempted to forgo this extra abstraction and just build the strings by hand, but the extra time it took to write this abstraction quickly paid off when I moved on to more complex SVG drawings (like the <a href="https://github.com/nfriend/inspirograph/blob/master/Spirograph/scripts/Shapes/RingGear.ts">Ring Gear</a> and the <a href="https://github.com/nfriend/inspirograph/blob/master/Spirograph/scripts/Shapes/Beam.ts">Beam</a>).</p>
         <br />
         <!--#endregion-->
         <!--#region Designing the interactions-->
@@ -141,7 +141,7 @@
         <h5>Reception</h5>
         <p>
             Inspirograph turned out to be a much bigger hit than I expected.
-            Within a month, Inspirograph recieved over 320,000 page hits and more than 5800 creations were submitted to the gallery.
+            Within a month, Inspirograph received over 320,000 page hits and more than 5800 creations were submitted to the gallery.
             Fortunately, I host Inspirograph on <a href="http://azure.microsoft.com/">Microsoft's Azure platform</a>, which allowed me to quickly scale my server's hardware to meet the sudden demand.
         </p>
         <p>Inspirograph was featured by the <a href="http://adobe.tumblr.com/post/100086819603/the-amazing-inspirograph">Adobe Inspire magazine</a> and <a href="http://www.chromeexperiments.com/detail/inspirograph/?f=">Chrome Experiments</a>, made appearances on <a href="http://www.reddit.com/r/InternetIsBeautiful/comments/2kwc6k/incredibly_well_done_online_inspirograph_maker/">Reddit</a> and <a href="https://news.ycombinator.com/item?id=8475293">Hacker News</a>, and <a href="https://twitter.com/search?q=inspirograph&src=typd">enjoyed a warm reception on Twitter:</a></p>

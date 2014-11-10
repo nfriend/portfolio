@@ -2,7 +2,10 @@
 <div class="scroll-container">
     <div class="portfolio-content">
         <!--#region Intro-->
-        <p>Beginning in 2013, DuPont Pioneer's Research IM department began a concerted effort to provide a consistent end-user experience across its entire application portfolio.  The result of this effort was SoyLib, an opinionated WPF library that enforces a common backend structure and provides resuable frontend components.</p>
+        <p>
+            Beginning in 2013, DuPont Pioneer's Research IM department began a concerted effort to provide a consistent end-user experience across its entire application portfolio.
+            The result of this effort was SoyLib, an opinionated WPF library that enforces a common backend structure and provides reusable frontend components.
+        </p>
         <br />
         <div class="row info-row">
             <div class="col-sm-2"><b>Dates:</b></div>
@@ -21,7 +24,7 @@
         </div>
         <div class="row info-row">
             <div class="col-sm-2"><b>How I Contributed:</b></div>
-            <div class="col-sm-10">Designed and developed a majority of the framework's visual components</div>
+            <div class="col-sm-10">I designed and developed a majority of the framework's visual components</div>
         </div>
         <hr />
         <div class="cleared"></div>
@@ -54,22 +57,22 @@
         <p>To configure an expander to display validation warnings, a developer must specify its style and connect it to its target elements using the <span class="inline-code">ErrorMessages</span> attached property:</p>
         <div code brush="xml">
             &lt;Expander&gt;
-              &lt;Expander.Style&gt;
-                &lt;Style TargetType=&quot;{x:Type Expander}&quot; BasedOn=&quot;{StaticResource ErrorAwareExpanderStyle}&quot;&gt;
-                  &lt;Setter Property=&quot;ap:ErrorAggregator.ErrorMessages&quot;&gt;
-                  &lt;Setter.Value&gt;
-                    &lt;MultiBinding Converter=&quot;{converters:TargetsConverter}&quot;&gt;
-                      &lt;Binding ElementName=&quot;FirstNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                      &lt;Binding ElementName=&quot;LastNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                      &lt;Binding ElementName=&quot;AgeTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                      &lt;Binding ElementName=&quot;SocialSecurityTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
-                    &lt;/MultiBinding&gt;
-                  &lt;/Setter.Value&gt;
-                &lt;/Setter&gt;
-              &lt;/Style&gt;
+            &lt;Expander.Style&gt;
+            &lt;Style TargetType=&quot;{x:Type Expander}&quot; BasedOn=&quot;{StaticResource ErrorAwareExpanderStyle}&quot;&gt;
+            &lt;Setter Property=&quot;ap:ErrorAggregator.ErrorMessages&quot;&gt;
+            &lt;Setter.Value&gt;
+            &lt;MultiBinding Converter=&quot;{converters:TargetsConverter}&quot;&gt;
+            &lt;Binding ElementName=&quot;FirstNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;Binding ElementName=&quot;LastNameTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;Binding ElementName=&quot;AgeTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;Binding ElementName=&quot;SocialSecurityTextBox&quot; Path=&quot;(Validation.Errors).CurrentItem.ErrorContent&quot; /&gt;
+            &lt;/MultiBinding&gt;
+            &lt;/Setter.Value&gt;
+            &lt;/Setter&gt;
+            &lt;/Style&gt;
             &lt;/Expander.Style&gt;
 
-              &lt;!-- expander content here --&gt;
+            &lt;!-- expander content here --&gt;
 
             &lt;/Expander&gt;
         </div>
