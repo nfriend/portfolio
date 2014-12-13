@@ -1,6 +1,8 @@
-node_modules
-dist
-devbuild
-.tmp
-.sass-cache
-app/bower_components
+Portfolio/node_modules
+Portfolio/dist
+Portfolio/devbuild
+Portfolio/.tmp
+Portfolio/.sass-cache
+Portfolio/bower_components
+Portfolio/bin
+Portfolio/obj
