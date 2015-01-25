@@ -8329,6 +8329,7 @@ h5 {
   top: 0;
   height: 100%;
   background: #d1ddeb;
+  overflow-y: auto;
 }
 .menu .link-container > a {
   text-decoration: none;

@@ -68,6 +68,7 @@
     <Content Include="images\541640052bc88.png" />
     <Content Include="images\animated-expander.gif" />
     <Content Include="images\card-back.png" />
+    <Content Include="images\ftms.jpg" />
     <Content Include="images\gear-example.jpg" />
     <Content Include="images\green-card.png" />
     <Content Include="images\inspirograph1.jpg" />
@@ -110,6 +111,7 @@
       <DependentUpon>application.css</DependentUpon>
     </Content>
     <Content Include="test.html" />
+    <Content Include="views\ftms.html" />
     <Content Include="views\locationmanager.html" />
     <Content Include="views\portfolio.html" />
     <Content Include="views\dashboard.html" />

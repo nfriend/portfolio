@@ -29,6 +29,11 @@ angular.module('portfolio', [
             controller: 'LandingController',
             title: 'Inspirograph'
         });
+        $routeProvider.when('/ftms', {
+            templateUrl: 'views/ftms.html',
+            controller: 'LandingController',
+            title: 'FTMS'
+        });
         $routeProvider.when('/nodechat', {
             templateUrl: 'views/nodechat.html',
             controller: 'LandingController',
